@@ -1,17 +1,27 @@
 # Reveal.js / Mark.js plugin
 
-This is a fork of a part of Reveal.js' own "highlight" plugin, which supports
-animated marking (emphasizing) of specific code regions by line or line range.
+Based on the [highlight
+plugin](https://github.com/hakimel/reveal.js/blob/master/plugin/highlight/plugin.js)
+from [Reveal.js](https://revealjs.com), which supports animated marking
+(emphasizing) of specific code regions by line or line range.
 
-This plugin additionally supports marking:
+This plugin additionally supports marking content:
 
-- In non-code content
+- That is not code
 - By matched regexp
-- Across HTML elements
+- Across HTML element boundaries
 
 The latter is particularly important if you are trying to mark regions in code
-that already has HTML syntax highlighting, e.g. inserted by a preprocessor like
-[Jekyll](https://jekyllrb.com).
+that already has HTML syntax highlighting. That might be the case, for example,
+if you use [Jekyll](https://jekyllrb.com) to render your markdown.
+
+This magic is accomplished by harnessing the wonderful
+[Mark.js](https://markjs.io) library.
+
+Note
+: Unlike the highlight plugin from Reveal.js, this plugin does **not** do any
+  code syntax highlighting.  If you need that functionality, you might want to
+  use the two plugins together.
 
 ## Usage
 
