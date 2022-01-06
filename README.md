@@ -18,10 +18,12 @@ if you use [Jekyll](https://jekyllrb.com) to render your markdown.
 This magic is accomplished by harnessing the wonderful
 [Mark.js](https://markjs.io) library.
 
-**Note**  
+**Note**\
 Unlike the highlight plugin from Reveal.js, this plugin does **not** do any
 code syntax highlighting.  If you need that functionality, you might want to
-use the two plugins together.
+use the two plugins together… or use a preprocessor like jekyll to get
+highlighting.
+
 
 ## Usage
 
